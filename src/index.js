@@ -1,13 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+// import App from './App';
+import Catalog from './Catalog';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className="container py-3">
+      
+      <h2 className="pb-2 mb-4 border-bottom">Our Books</h2>
+          <div className="row"> <Catalog/></div>  
+      </div>
+    
+    {/* <App /> */}
   </React.StrictMode>
 );
 

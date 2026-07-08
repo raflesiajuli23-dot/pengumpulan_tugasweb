@@ -1,7 +1,7 @@
 import React, { Fragment } from "react";
 
 class Catalog extends React.Component {
-    constuructor() {
+    constructor() {
         super();
         this.books = [
             ["buku1.jpg", "Menguasai Pemograman Berorientasi Objek", "Ade Rahmat Iskandar", "Informatika", 2020],
@@ -41,3 +41,5 @@ class Catalog extends React.Component {
         )
     }
 }
+
+export default Catalog;
