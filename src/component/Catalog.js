@@ -1,4 +1,5 @@
 import React, { Fragment } from "react";
+import CatalogItem from "./CatalogItem";
 
 class Catalog extends React.Component {
     constructor() {
@@ -35,10 +36,13 @@ class Catalog extends React.Component {
             );
         }
         return (
-            <Fragment>
-                {bookList}
-            </Fragment>
-        )
+    <div className="container py-3">
+        <h2 className="pb-2 mb-4 mt-4 border-bottom">Our Books</h2>
+        <div className="row">
+            {bookList}
+        </div>
+    </div>
+)
     }
 }
 
