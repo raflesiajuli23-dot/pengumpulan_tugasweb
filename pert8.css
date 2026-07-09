@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e3a8a;
+    padding: 15px 30px;
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.auth button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login {
+    background: blue;
+    color: white;
+}
+
+.register {
+    background: green;
+    color: white;
+}
+
+/* HEADER */
+.header {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ccc;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* ABOUT */
+.about {
+    text-align: center;
+    padding: 30px;
+}
+
+/* VIDEO */
+.video {
+    text-align: center;
+    padding: 30px;
+}
+
+iframe {
+    width: 560px;
+    height: 315px;
+    max-width: 100%;
+}
+
+/* BERITA */
+.berita {
+    padding: 30px;
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px; /* INI YANG KURANG */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    text-align: left;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #1e3a8a;
+    color: white;
+    margin-top: 20px;
+}

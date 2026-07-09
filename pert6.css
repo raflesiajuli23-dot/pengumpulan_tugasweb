@@ -1,0 +1,90 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:linear-gradient(to bottom,#4CAF50,#B8F5C2);
+}
+
+.container{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.register{
+    width:260px;
+    background:#49B75F;
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.4);
+}
+
+.register h3{
+    text-align:center;
+    color:white;
+    margin-bottom:15px;
+    font-size:15px;
+}
+
+.register input[type="text"],
+.register input[type="email"],
+.register input[type="password"],
+.register input[type="date"]{
+    width:100%;
+    margin:8px 0;
+    padding:8px 3px;
+    border:none;
+    border-bottom:1px solid white;
+    background:transparent;
+    color:white;
+    outline:none;
+    font-size:12px;
+}
+
+.register input::placeholder{
+    color:white;
+}
+
+.register label{
+    color:white;
+    font-size:12px;
+}
+
+.gender{
+    color:white;
+    margin:10px 0;
+    font-size:12px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    margin-top:15px;
+    background:transparent;
+    color:white;
+    border:1px solid white;
+    cursor:pointer;
+    letter-spacing:3px;
+}
+
+button:hover{
+    background:rgba(255,255,255,0.2);
+}
+
+.register a{
+    display:block;
+    text-align:center;
+    margin-top:10px;
+    color:white;
+    text-decoration:none;
+    font-size:12px;
+}

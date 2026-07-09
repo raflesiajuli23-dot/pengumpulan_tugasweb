@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Bilangan</title>
+    <link rel="stylesheet" href="pert9.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Konversi Bilangan</h1>
+
+        <input type="number" id="angka" placeholder="Masukkan Bilangan Desimal">
+
+        <button onclick="konversi()">Konversi</button>
+
+        <div id="hasil"></div>
+    </div>
+
+    <script>
+        function konversi() {
+
+            let angka = document.getElementById("angka").value;
+
+            if (angka === "" || isNaN(angka)) {
+                alert("Masukkan Angka yang benar!");
+                return;
+            }
+
+            angka = parseInt(angka);
+
+            let biner = angka.toString(2);
+            let oktal = angka.toString(8);
+            let heksa = angka.toString(16).toUpperCase();
+
+            document.getElementById("hasil").innerHTML =
+                "<p><b>Biner :</b> " + biner + "</p>" +
+                "<p><b>Oktal :</b> " + oktal + "</p>" +
+                "<p><b>Heksadesimal :</b> " + heksa + "</p>";
+        }
+    </script>
+
+</body>
+</html>

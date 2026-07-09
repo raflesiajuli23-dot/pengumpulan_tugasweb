@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum M4 - CSS Layouting ST Bhinneka</title>
+    <link rel="stylesheet" href="style (2).css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <a href="https://satyaterrabhinneka.ac.id/" target="_blank">
+                <img src="https://satyaterrabhinneka.ac.id/assets/img/logo-universitas-satya-terra-bhinneka.png" alt="Logo ST Bhinneka">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#tentang">Tentang Kami</a></li>
+                <li><a href="#hubungi">Hubungi Kami</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2 class="form-title">Formulir Pengguna</h2>
+        
+        <form action="#" method="POST" enctype="multipart/form-data">
+            
+            <div class="form-group">
+                <label for="nama">Nama</label>
+                <div class="form-control-container">
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <div class="form-control-container">
+                    <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Jenis Kelamin</label>
+                <div class="form-control-container options-group">
+                    <input type="radio" id="pria" name="gender" value="Laki-laki">
+                    <label for="pria">Laki-laki</label>
+                    
+                    <input type="radio" id="wanita" name="gender" value="Perempuan">
+                    <label for="wanita">Perempuan</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="usia">Usia</label>
+                <div class="form-control-container">
+                    <input type="number" id="usia" name="usia" min="1" placeholder="Contoh: 20">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <div class="form-control-container">
+                    <input type="password" id="password" name="password" placeholder="Minimal 8 karakter">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <div class="form-control-container">
+                    <textarea id="alamat" name="alamat" rows="3" placeholder="Alamat lengkap tempat tinggal..."></textarea>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="gambar">Pilih Gambar</label>
+                <div class="form-control-container">
+                    <input type="file" id="gambar" name="gambar" accept="image/*">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Hobi</label>
+                <div class="form-control-container options-group">
+                    <input type="checkbox" id="olahraga" name="hobi" value="Olahraga">
+                    <label for="olahraga">Olahraga</label>
+                    
+                    <input type="checkbox" id="musik" name="hobi" value="Musik">
+                    <label for="musik">Musik</label>
+                    
+                    <input type="checkbox" id="membaca" name="hobi" value="Membaca">
+                    <label for="membaca">Membaca</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal_lahir">Tanggal Lahir</label>
+                <div class="form-control-container">
+                    <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Submit Data</button>
+
+        </form>
+    </div>
+
+</body>
+</html>
